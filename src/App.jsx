@@ -40,14 +40,22 @@ function App() {
 
 export default App;
 */
-import UserGreeting from "./UserGreeting";
+// import UserGreeting from "./UserGreeting";
 
 
+// function App(){
+//   return(
+//   <>
+//   <UserGreeting isloggedIn={true} username="Saraswathi"/>
+//   </>
+//   );
+// }
+// export default App
+import React from "react";
+import List from "./List.jsx"
 function App(){
   return(
-  <>
-  <UserGreeting isloggedIn={false} username="Saraswathi"/>
-  </>
+        <List />
   );
 }
 export default App
