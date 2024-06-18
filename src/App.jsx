@@ -1,3 +1,4 @@
+/* Card
 // import Card from './Card.jsx'
 // import profilePic from './assets/images.jpeg'
 // import reactPic from './assets/download.jpeg'
@@ -18,22 +19,10 @@
 //                     />
 //             </div>
 //     );
-            
 // }
 // export default App  
-// import Student from "./Student";
-
-// function App(){
-
-//     return(
-//     <>
-//     <Student name="John" age={20} isStudent={true}></Student>
-//     <Student name="Alice" age={25} isStudent={false}></Student>
-//     </>
-//     );
-// }
-// export default App
-
+*/
+/* Props 
 import React from 'react';
 import Student from './Student';
 import './index.css'
@@ -43,9 +32,22 @@ function App() {
     <>
       <Student name="John" age={20} isStudent={true} />
       <Student name="Alice" age={25} isStudent={false} />
-      <Student name="Alice" age={25} isStudent={false} />
+      <Student name="Bob" age={28} isStudent={True} />
+      <Student name="Bob" age={28} isStudent={True} />
     </>
   );
 }
 
 export default App;
+*/
+import UserGreeting from "./UserGreeting";
+
+
+function App(){
+  return(
+  <>
+  <UserGreeting isloggedIn={false} username="Saraswathi"/>
+  </>
+  );
+}
+export default App
