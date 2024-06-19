@@ -1,30 +1,21 @@
+import React from 'react';
 
-function List(){
-    // list 
-    // const fruits=["apple", "banana", "watermelon", "grapes"];
+function List(props) {
+    const category = props.category;
+    const itemsList = props.items;
 
-    //objects { key: value }
-    const fruits =[{id:1, name:"apple", count:5, cal:45},
-                  {id:2, name:"orange", count:15, cal:76},
-                  {id:3, name:"mango", count:7, cal:102},
-                  {id:4, name:"watermelon", count:17, cal:87},
-                  {id:5, name:"banana", count:9, cal:120},
-    ];
-    /*
-    //Adding custom sort (ascending) 
-    fruits.sort((a, b)=> a.name.localeCompare(b.name));
-     //Adding custom sort (descending)
-    fruits.sort((a, b)=> b.name.localeCompare(a.name));
+    const listItems = itemsList.map(item => (
+        <li key={item.id}>
+            {item.name}: &nbsp;<b>{item.cal}</b>
+        </li>
+    ));
 
-    fruits.sort((a, b)=>a.count - b.count);//Numeric Ascending(a-b)
-    fruits.sort((a,b)=>b.count-a.count);//Numeric Descending (b-a)
-    */
-
-    const listItems = fruits.map(fruits => <li key={fruits.id}>
-                {fruits.name}: &nbsp;<b>{fruits.count}</b>
-                </li>);
-    return(<ol>{listItems}</ol>);
-
-    
+    return (
+        <>
+            <h3 className='list-category'>{category}</h3>
+            <ul className='list-items'>{listItems}</ul>
+        </>
+    );
 }
-export default List
+
+export default List;

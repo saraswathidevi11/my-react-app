@@ -65,7 +65,7 @@
 .Student p {
   margin: 0;
 } */
- .welcome-message {
+ /* .welcome-message {
             font-family: cursive;
             font-size: 1.5em;
             background-color: hsl(203, 50%, 50%);
@@ -88,4 +88,27 @@
           width:25%;
           text-align: center;
 
- }
+ } */
+  .list-category {
+          font-size:2.5em;
+          font-weight: bold;
+          font-family: cursive;
+          color: hsl(0, 0%, 10%);
+          margin-bottom: 10px;
+          text-align: center;
+          border: 3px solid black;
+          border-radius: 5px;
+          background-color: hsl(203, 50%, 50%);
+  }
+
+  .list-items li{
+          font-size: 2em;
+          list-style: none;
+          color:hsl(0, 0%, 25%);
+          text-align: center;
+          margin:0;    
+  }
+  .list-items li:hover{
+          color: hsl(0, 0%, 45%);
+          cursor: pointer;
+  }
